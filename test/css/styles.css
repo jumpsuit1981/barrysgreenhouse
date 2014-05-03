@@ -43,6 +43,7 @@ body a:hover{
 
 #header {
   position: fixed;
+  top:0;
   width:100%;
 	margin: 0px;
 	padding:20px 0 0 0;
@@ -88,6 +89,10 @@ body a:hover{
 #subnav {
 	border-bottom: 2px solid #72c7af;
   padding:10px 40px;
+}
+
+#subnav li {
+  display:inline-block;
 }
 
 #subnav a {
@@ -390,6 +395,10 @@ body {
 
 
 
+/* Make an active state for subnav elements. */
+#subnav .active a  {
+  color:#ef3d23;
+}
 
 /* Give the primary navigation a little spacing above and below the words. */
 .pnav a {
@@ -407,14 +416,18 @@ as the logo */
 
 /* Set some padding on the top of the #content at each responsive level
 to push the page content out from behind the header. */
-#content {
+body {
   padding-top:250px;
 }
 
 @media (min-width: 768px) { 
-  #content {
+  body {
     padding-top:183px;
   }
 }
 
 
+
+section {
+  height:600px;
+}
