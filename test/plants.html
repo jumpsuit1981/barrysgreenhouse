@@ -4,18 +4,22 @@
 	
 		<meta name="viewport"content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
-  		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<link href = "css/styles.css" rel = "stylesheet">
-		<link href = "css/bootstrap.css" rel = "stylesheet" media="screen">
-		<link type="text/css" rel="stylesheet" href="styles.css"/>
+		<link href="css/styles.css" rel = "stylesheet">
+		<link href="css/bootstrap.css" rel = "stylesheet" media="screen">
 		
-		<script type="text/javascript" src="//use.typekit.net/iso7wnl.js"></script>
+		<script type="text/javascript" src="http://use.typekit.net/iso7wnl.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	   	<script src="//code.jquery.com/jquery.js"></script>
-		
+   	<script src="js/jquery.min.js"></script>
+   	<script src="js/bootstrap.js"></script>
+   	<script src="js/jquery.scrollTo.min.js"></script>
+   	<script src="js/main.js"></script>
 	</head>
-	<body>
+
+	<!-- 'data-spy' and 'data-target' attributes control the secondary 
+	nav auto highlighting. See documentation at http://getbootstrap.com/javascript/#scrollspy. -->
+	<body data-spy="scroll" data-target="#subnav" data-offset="280">
 <!--
 	
 		<div class ="topbar">
@@ -24,58 +28,131 @@
 			<div class="textright"><p>Shopping Cart</p>
 			</div>
 		</div>
-		
-		
 -->
 		<div id="header">
 			<div class="container">
+
 				<div id="header_inner">
 					<div class="row">
-						<div class="col-sm-12">
-							<div id="logomark">
+						<div class="col-sm-4 col-sm-push-4" id="logomark">
 							<img src="img/barrys_logo_newcolor_0114.png"></a>
-							</div>
-					
-							<div class="row">
-								<div id="main_nav">
-				
-									<div class="col-sm-6" id="nav_set1">
-										<a class="first">Home</a>
-										<a>Services</a>
-										<a href="http://www.barrysgreenhouse.com/test/plants">Plants</a>
-									</div>
-						
-									<div class="col-sm-6" id="nav_set2">
-										<a class="first">About</a>
-										<a>Products</a>
-										<a>Gifts</a>
-									</div>
-								</div>
-							</div>
+						</div>
+		
+						<div class="pnav col-sm-4 col-sm-pull-4">
+							<a>Home</a>
+							<a>Services</a>
+							<a href="http://www.barrysgreenhouse.com/test/plants">Plants</a>
+						</div>
+			
+						<div class="pnav col-sm-4">
+							<a>About</a>
+							<a>Products</a>
+							<a>Gifts</a>
 						</div>
 					</div>
 				</div>
-				
 				
 				<div id="subnav">
-					<div class="row">
-						<div class="col-sm-12" id="nav_sub">
-							<div class="row">
-								<a class="first">Annuals</a>
-								<a>Perennials</a>
-								<a>Trees & Shrubs</a>
-								<a>Vegetables</a>
-								<a>Herbs</a>
-							</div>
-						</div>
-					</div>
+					<ul class="nav">
+						<li><a href="#annuals">Annuals</a></li>
+						<li><a href="#perennials">Perennials</a></li>
+						<li><a href="#trees_shrubs">Trees & Shrubs</a></li>
+						<li><a href="#vegetables">Vegetables</a></li>
+						<li><a href="#herbs">Herbs</a></li>
+					</ul>
 				</div>
-				
 				
 			</div>	
 		</div>
-		
-		
+
+		<div class="container">
+			<!-- Main content area. Each <section/> tag represents an area 
+			in the sub-nav -->
+			<section id="annuals">
+				<h2>Annuals</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+
+
+			<section id="perennials">
+				<h2>Perennials</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+
+
+			<section id="trees_shrubs">
+				<h2>Trees & Shrubs</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+
+
+			<section id="vegetables">
+				<h2>Vegetables</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+
+
+			<section id="herbs">
+				<h2>Herbs</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+		</div>
+
 	</body>
 </html>	
 
