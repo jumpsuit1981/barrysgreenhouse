@@ -1,5 +1,5 @@
 body {
-	background-image: url(http://www.barrysgreenhouse.com/test/img/background3.jpg);
+	background-image: url(../img/background3.jpg);
 	background-repeat: repeat;
 /* 	background-color:#b0c4de; */
 
@@ -41,30 +41,26 @@ body a:hover{
 	width: 166px;
 }
 
-#header{
-
+#header {
+  position: fixed;
+  width:100%;
 	margin: 0px;
-	padding: 0px;
+	padding:20px 0 0 0;
 	text-align: center;
 	text-decoration: none;
-	height:133px;
 	z-index: 500;
 	width:100%
-	clear:both
+	clear:both;
+  background-image: url(../img/background3.jpg);
+  background-repeat: repeat;
 }
 
 #header_inner{
-	height:133px;
-	text-decoration: none;
+  padding-bottom:5px;
 	border-bottom: 2px solid #72c7af;
-	}
+}
 	
 #logomark {
-	display: block;
-	position:absolute;
-	left:50%;
-	margin-left:-60px;
-	top:22px;
 }
 	
 #logomark img{
@@ -90,20 +86,23 @@ body a:hover{
 }
 
 #subnav {
-	height:60px;
 	border-bottom: 2px solid #72c7af;
+  padding:10px 40px;
 }
 
-#nav_sub {
+#subnav a {
+  display:inline-block;
+  padding:5px 10px;
   font-size: 13px;
   font-weight: 400;
   color:rgb(83, 71, 65);
   letter-spacing: 1px;
-  position: relative;
+  cursor:pointer;
+  text-decoration: none;
+}
 
-/*   margin:30px auto; */
-  top:20px;
-/*   text-transform: uppercase; */
+#subnav a:hover {
+  color:#ef3d23;
 }
 
 #nav_set1 {
@@ -137,7 +136,7 @@ body a:hover{
 }
 
 #nav_sub a {
-	padding-left:20px;
+	padding:0 10px;
 	text-decoration: none;
 	white-space: nowrap;
 }
@@ -208,7 +207,7 @@ body {
 
 .subscribe-pitch {
 /*   padding-left: 120px; */
- /*  background: url('../img/email.png') 5px center no-repeat; */
+ /*  background: url('../../img/email.png') 5px center no-repeat; */
 
   > h3 {
     margin: 0 0 12px;
@@ -292,7 +291,7 @@ body {
     margin-top: 1px;
     width: 25px;
     height: 19px;
-/*     background: url('../img/tick.png'); */
+/*     background: url('../../img/tick.png'); */
   }
 }
 
@@ -313,7 +312,7 @@ body {
 }
 */
 
-@media (max-width: 992px) {
+/*@media (max-width: 992px) {
 	#nav_set1 {
 	text-align:left;
 	margin:0;
@@ -324,7 +323,9 @@ body {
 	#main_nav #nav_set1 a.first {
 	padding-left:0px;
 	}
-}
+}*/
+
+
 
 
 @media (max-width: 992px) {
@@ -335,7 +336,7 @@ body {
 }
 
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
 
 	#header{
 	position:auto;
@@ -345,10 +346,6 @@ body {
 	#header_inner{
 	position:relative;
 	height:185px;
-	}
-	
-	#subnav a {
-	margin: 20px 0;
 	}
 	
 	#logomark {
@@ -369,6 +366,11 @@ body {
 	margin:-10px auto;
 	}
 
+  #main_nav a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 	#main_nav #nav_set2 a.first {
 	padding-left:0px;
 	}
@@ -384,4 +386,35 @@ body {
 	.carousel-inner p{
 	font-size:12px;
 	}
+}*/
+
+
+
+
+/* Give the primary navigation a little spacing above and below the words. */
+.pnav a {
+  display:inline-block;
+  padding:2px 10;
 }
+
+/* When the primary nav is split, push it down to sit on the same line
+as the logo */
+@media (min-width: 768px) { 
+  .pnav {
+    padding-top:68px;
+  }
+}
+
+/* Set some padding on the top of the #content at each responsive level
+to push the page content out from behind the header. */
+#content {
+  padding-top:250px;
+}
+
+@media (min-width: 768px) { 
+  #content {
+    padding-top:183px;
+  }
+}
+
+
