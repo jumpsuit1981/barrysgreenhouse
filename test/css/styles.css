@@ -444,3 +444,8 @@ body {
     padding-top:183px;
   }
 }
+
+/*give footer columns a fixed height */
+#footer .row > div {
+	height:200px;
+}
